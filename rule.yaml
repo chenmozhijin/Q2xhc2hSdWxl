@@ -502,6 +502,7 @@ rule-providers:
     behavior: classical
     interval: 86400
     format: text
+    type: http
   BlueArchiveGlobal(nexon):
     url: https://testingcf.jsdelivr.net/gh/chenmozhijin/Q2xhc2hSdWxl@main/Ruleset/BlueArchiveGlobal(nexon).list
     path: ./ruleset/BlueArchiveGlobal(nexon).list
