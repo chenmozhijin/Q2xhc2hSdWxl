@@ -1,0 +1,222 @@
+# > huggingface
+DOMAIN-SUFFIX,huggingface.co
+
+# > recaptcha
+DOMAIN-SUFFIX,recaptcha.net
+
+# > microsoft
+  # Bing
+DOMAIN-SUFFIX,bing.com
+  # .net
+DOMAIN,download.visualstudio.microsoft.com
+
+# > cdn
+DOMAIN,cdn.cookielaw.org
+DOMAIN-SUFFIX,zdstatic.speedtest.net
+DOMAIN-SUFFIX,cdnst.net
+
+# > ipleak
+DOMAIN-SUFFIX,ipleak.net
+
+##api
+# > ip
+DOMAIN-SUFFIX,ip.sb
+DOMAIN-SUFFIX,ipify.org
+# > p
+DOMAIN,picaapi.picacomic.com
+DOMAIN,live-server.bidobido.xyz
+DOMAIN,post-api.wikawika.xyz
+DOMAIN,s3.picacomic.com
+DOMAIN,storage.diwodiwo.xyz
+DOMAIN,img.tipatipa.xyz
+DOMAIN,www.picacomic.com
+DOMAIN,storage-b.picacomic.com
+DOMAIN,img.picacomic.com
+DOMAIN-SUFFIX,picacomic.com
+DOMAIN-SUFFIX,bidobido.xyz
+DOMAIN-SUFFIX,wikawika.xyz
+DOMAIN-SUFFIX,diwodiwo.xyz
+DOMAIN-SUFFIX,tipatipa.xyz
+
+# > e
+DOMAIN,hlraote.ijosotukkpqy.hath.network
+DOMAIN,ueykmnf.ahpftbudbayo.hath.network
+DOMAIN,zhmryzn.jyocudsfgxib.hath.network
+DOMAIN,exhentai.org
+DOMAIN,api.e-hentai.org
+DOMAIN,e-hentai.org
+DOMAIN,s.exhentai.org
+DOMAIN,ehgt.org
+DOMAIN-SUFFIX,hath.network
+DOMAIN-SUFFIX,exhentai.org
+DOMAIN-SUFFIX,e-hentai.org
+DOMAIN-SUFFIX,ehgt.org
+##api end
+
+# > box
+DOMAIN,cdn01.boxcdn.net
+DOMAIN-SUFFIX,boxcdn.net
+DOMAIN-SUFFIX,box.com
+##box end
+
+# > civitai
+DOMAIN-SUFFIX,civitai.com
+
+# > google
+DOMAIN-KEYWORD,google
+DOMAIN-KEYWORD,gmail
+DOMAIN-SUFFIX,googleapis.cn
+DOMAIN-SUFFIX,googleapis.com
+DOMAIN-SUFFIX,google.com.tw
+DOMAIN-SUFFIX,google.com.hk
+DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+DOMAIN-SUFFIX,google.com
+DOMAIN-SUFFIX,gstatic.com
+DOMAIN,fonts.gstatic.com
+DOMAIN,www.gstatic.com
+DOMAIN,ssl.gstatic.com
+DOMAIN,csi.gstatic.com
+DOMAIN,www.googletagmanager.com
+  # youtube
+DOMAIN-KEYWORD,youtube
+DOMAIN-SUFFIX,youtube.com
+DOMAIN-SUFFIX,yt3.ggpht.com
+DOMAIN-SUFFIX,ytimg.com
+DOMAIN-SUFFIX,youtubeeducation.com
+DOMAIN-SUFFIX,youtubegaming.com
+DOMAIN-SUFFIX,youtubekids.com
+DOMAIN,music.youtube.com
+DOMAIN-SUFFIX,googlevideo.com
+
+##google end
+
+# > github
+DOMAIN-SUFFIX,githubusercontent.com 
+DOMAIN,github-production-release-asset-2e65be.s3.amazonaws.com 
+DOMAIN,github-production-user-asset-6210df.s3.amazonaws.com 
+DOMAIN,github-cloud.s3.amazonaws.com 
+DOMAIN,github-com.s3.amazonaws.com 
+DOMAIN,github-production-repository-file-5c1aeb.s3.amazonaws.com 
+DOMAIN,codeload.github.com 
+DOMAIN,github.githubassets.com 
+DOMAIN,assets-cdn.github.com 
+DOMAIN,raw.github.com 
+DOMAIN,github.blog 
+DOMAIN-SUFFIX,github.com 
+DOMAIN,api.github.com 
+DOMAIN,gist.github.com 
+##github end
+
+# > openwrt-编译cdn
+DOMAIN,git.openwrt.org
+DOMAIN-SUFFIX,openwrt.org
+DOMAIN,sources.openwrt.org
+DOMAIN,sources.cdn.openwrt.org
+DOMAIN,commondatastorage.googleapis.com
+DOMAIN,mirror2.openwrt.org
+DOMAIN,ftp.nara.wide.ad.jp
+DOMAIN,mirrors.mit.edu
+DOMAIN,ftp.kernel.org
+DOMAIN,download.xs4all.nl
+DOMAIN,www.nasm.us
+DOMAIN,cdn.kernel.org
+DOMAIN,mirror.csclub.uwaterloo.ca
+DOMAIN,mirrors.mit.edu
+DOMAIN,www.ring.gr.jp
+DOMAIN,mirror.netcologne.de
+DOMAIN,ftp.riken.jp
+DOMAIN,ftp.kddilabs.jp
+##openwrt-编译cdn end
+
+# > Image Hosting Service
+DOMAIN-SUFFIX,twimg.com
+DOMAIN,abs.twimg.com
+DOMAIN,abs-0.twimg.com
+DOMAIN,pbs.twimg.com
+DOMAIN-SUFFIX,sm.ms
+##Image Hosting Service end
+
+# > #Visual novel
+DOMAIN-SUFFIX,aquaplus.jp
+DOMAIN-SUFFIX,august-soft.com
+DOMAIN-SUFFIX,circus-co.jp
+DOMAIN-SUFFIX,cuffs.co.jp
+DOMAIN-SUFFIX,citrus-soft.net
+DOMAIN-SUFFIX,dmm.com
+DOMAIN-SUFFIX,feng.jp
+DOMAIN-SUFFIX,project-navel.com
+DOMAIN-SUFFIX,palette.clearrave.co.jp
+DOMAIN-SUFFIX,laplacian.jp
+DOMAIN-SUFFIX,lumpofsugar.co.jp
+DOMAIN-SUFFIX,nekonyansoft.com
+DOMAIN-SUFFIX,nekoneko-soft.info
+DOMAIN,static.hikarifield.co.jp
+DOMAIN-SUFFIX,madosoft.net
+DOMAIN-SUFFIX,marmalade.com
+DOMAIN-SUFFIX,mangagamer.com
+DOMAIN-SUFFIX,moon-stone.jp
+DOMAIN-SUFFIX,keromakura.net
+DOMAIN-SUFFIX,yorunohitsuji.xii.jp
+# > key
+DOMAIN-SUFFIX,key.soundslabel.com
+DOMAIN-SUFFIX,key.visualarts.gr.jp
+DOMAIN-SUFFIX,va-store.jp
+# > frontwing
+DOMAIN,en.frontwing.jp
+DOMAIN,never-island.com
+DOMAIN-SUFFIX,frontwing.jp
+# > aniplex.exe
+DOMAIN-SUFFIX,aniplex-exe.com
+# > atri
+DOMAIN,atri-mdm.com
+DOMAIN,atri-anime.com
+###Visual novel end
+
+# > dlsite
+DOMAIN-SUFFIX,dlsite.com
+DOMAIN,trial.dlsite.com
+DOMAIN,download.dlsite.com
+DOMAIN,img.dlsite.jp
+DOMAIN-SUFFIX,dlsite.jp
+DOMAIN,file.chobit.cc
+DOMAIN-SUFFIX,chobit.cc
+##dlsite end
+
+# > dmm
+DOMAIN-SUFFIX,dmm.com
+DOMAIN-SUFFIX,dmm.co.jp
+##dmm end
+
+# > discord
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN,dl.discordapp.net
+DOMAIN,gateway.discord.gg
+DOMAIN,status.discordapp.com
+DOMAIN,cdn.discordapp.com
+DOMAIN,media.discordapp.net
+DOMAIN,images-ext-2.discordapp.net
+DOMAIN,images-ext-1.discordapp.net
+DOMAIN,discordcdn.com
+DOMAIN,updates.discord.com
+DOMAIN,support.discordapp.com
+##discord end
+
+# > hcaptcha
+DOMAIN-SUFFIX,hcaptcha.com 
+DOMAIN,www.hcaptcha.com 
+DOMAIN,assets.hcaptcha.com 
+DOMAIN,imgs.hcaptcha.com 
+DOMAIN,newassets.hcaptcha.com 
+DOMAIN,js.hcaptcha.com 
+DOMAIN,hcaptcha-assets.ecosec.on.epicgames.com 
+DOMAIN,caldera-service-prod.ecosec.on.epicgames.com 
+DOMAIN,hcaptcha-api.ecosec.on.epicgames.com 
+DOMAIN,nelly-service-prod-cloudflare.ecosec.on.epicgames.com 
+DOMAIN,hcaptcha-reportapi.ecosec.on.epicgames.com 
+DOMAIN,hcaptcha-js.ecosec.on.epicgames.com 
+DOMAIN,talon-service-prod.ecosec.on.epicgames.com 
+DOMAIN,hcaptcha-imgs.ecosec.on.epicgames.com 
+DOMAIN,hcaptcha-endpoint.ecosec.on.epicgames.com 
+DOMAIN,talon-website-prod.ecosec.on.epicgames.com 
+##hcaptcha end
