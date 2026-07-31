@@ -12,7 +12,7 @@ DOMAIN-SUFFIX,apple.com
 DOMAIN-SUFFIX,windowsazure.com
 DOMAIN-SUFFIX,login.microsoftonline.com
 DOMAIN-SUFFIX,office.net
-    # Bing
+# Bing
 DOMAIN,cn.bing.com
 
 # > cdn
