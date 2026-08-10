@@ -254,39 +254,27 @@ proxy-groups:
   - name: 🇭🇰 香港
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
-    type: url-test
-    interval: 300
-    tolerance: 50
+    type: select
   - name: 🇯🇵 日本
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
-    type: url-test
-    interval: 300
-    tolerance: 50
+    type: select
   - name: 🇺🇲 美国
     include-all: true
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
-    type: url-test
-    interval: 300
-    tolerance: 50
+    type: select
   - name: 🇨🇳 台湾
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
-    type: url-test
-    interval: 300
-    tolerance: 50
+    type: select
   - name: 🇸🇬 新加坡
     include-all: true
     filter: (?i)新加坡|坡|狮城|SG|Singapore
-    type: url-test
-    interval: 300
-    tolerance: 50
+    type: select
   - name: 🇰🇷 韩国
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
-    type: url-test
-    interval: 300
-    tolerance: 50
+    type: select
   - name: 🎥 奈飞
     include-all: true
     filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
@@ -371,7 +359,7 @@ rule-providers:
     format: text
     type: http
   Telegram:
-    url: https://testingcf.jsdelivr.net/gh/chenmozhijin/Q2xhc2hSdWxl@main/Ruleset/Telegram.list
+    url: https://raw.githubusercontent.com/chenmozhijin/Q2xhc2hSdWxl/refs/heads/main/Ruleset/Telegram.list
     path: ./ruleset/Telegram.list
     behavior: classical
     interval: 86400
@@ -504,49 +492,49 @@ rule-providers:
     format: text
     type: http
   BlueArchiveGlobal(nexon):
-    url: https://testingcf.jsdelivr.net/gh/chenmozhijin/Q2xhc2hSdWxl@main/Ruleset/BlueArchiveGlobal(nexon).list
+    url: https://raw.githubusercontent.com/chenmozhijin/Q2xhc2hSdWxl/refs/heads/main/Ruleset/BlueArchiveGlobal(nexon).list
     path: ./ruleset/BlueArchiveGlobal(nexon).list
     behavior: classical
     interval: 86400
     format: text
     type: http
   HeavenBurnsRed:
-    url: https://testingcf.jsdelivr.net/gh/chenmozhijin/Q2xhc2hSdWxl@main/Ruleset/HeavenBurnsRed.list
+    url: https://raw.githubusercontent.com/chenmozhijin/Q2xhc2hSdWxl/refs/heads/main/Ruleset/HeavenBurnsRed.list
     path: ./ruleset/HeavenBurnsRed.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   NekoNyansoftPatches:
-    url: https://testingcf.jsdelivr.net/gh/chenmozhijin/Q2xhc2hSdWxl@main/Ruleset/NekoNyansoftPatches.list
+    url: https://raw.githubusercontent.com/chenmozhijin/Q2xhc2hSdWxl/refs/heads/main/Ruleset/NekoNyansoftPatches.list
     path: ./ruleset/NekoNyansoftPatches.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   NoJa:
-    url: https://testingcf.jsdelivr.net/gh/chenmozhijin/Q2xhc2hSdWxl@main/Ruleset/NoJa.list
+    url: https://raw.githubusercontent.com/chenmozhijin/Q2xhc2hSdWxl/refs/heads/main/Ruleset/NoJa.list
     path: ./ruleset/NoJa.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   OtherDirect:
-    url: https://testingcf.jsdelivr.net/gh/chenmozhijin/Q2xhc2hSdWxl@main/Ruleset/OtherDirect.list
+    url: https://raw.githubusercontent.com/chenmozhijin/Q2xhc2hSdWxl/refs/heads/main/Ruleset/OtherDirect.list
     path: ./ruleset/OtherDirect.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   OtherProxy:
-    url: https://testingcf.jsdelivr.net/gh/chenmozhijin/Q2xhc2hSdWxl@main/Ruleset/OtherProxy.list
+    url: https://raw.githubusercontent.com/chenmozhijin/Q2xhc2hSdWxl/refs/heads/main/Ruleset/OtherProxy.list
     path: ./ruleset/OtherProxy.list
     behavior: classical
     interval: 86400
     format: text
     type: http
   OverseasGamingPlatforms:
-    url: https://testingcf.jsdelivr.net/gh/chenmozhijin/Q2xhc2hSdWxl@main/Ruleset/OverseasGamingPlatforms.list
+    url: https://raw.githubusercontent.com/chenmozhijin/Q2xhc2hSdWxl/refs/heads/main/Ruleset/OverseasGamingPlatforms.list
     path: ./ruleset/OverseasGamingPlatforms.list
     behavior: classical
     interval: 86400
