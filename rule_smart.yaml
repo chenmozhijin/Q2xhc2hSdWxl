@@ -17,6 +17,12 @@ proxy-groups:
     type: select
     proxies:
       - ♻️ 自动选择
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇭🇰 香港
       - 🇨🇳 台湾
       - 🇸🇬 新加坡
@@ -25,19 +31,28 @@ proxy-groups:
       - 🇰🇷 韩国
       - 🚀 手动切换
       - DIRECT
+
   - name: 🚀 手动切换
     include-all: true
     type: select
+
   - name: ♻️ 自动选择
     type: url-test
     include-all: true
     interval: 300
     tolerance: 50
+
   - name: 📲 电报消息
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇸🇬 新加坡
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -46,11 +61,18 @@ proxy-groups:
       - 🇰🇷 韩国
       - 🚀 手动切换
       - DIRECT
+
   - name: 💬 OpenAi
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇸🇬 新加坡
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -59,11 +81,18 @@ proxy-groups:
       - 🇰🇷 韩国
       - 🚀 手动切换
       - DIRECT
+
   - name: 💬 Claude
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇸🇬 新加坡
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -72,11 +101,18 @@ proxy-groups:
       - 🇰🇷 韩国
       - 🚀 手动切换
       - DIRECT
+
   - name: 📹 油管视频
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇸🇬 新加坡
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -85,12 +121,20 @@ proxy-groups:
       - 🇰🇷 韩国
       - 🚀 手动切换
       - DIRECT
+
   - name: 🎥 奈飞视频
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
+      - ⚡ 🎥 奈飞 (Smart)
       - 🎥 奈飞
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇸🇬 新加坡
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -99,24 +143,36 @@ proxy-groups:
       - 🇰🇷 韩国
       - 🚀 手动切换
       - DIRECT
+
   - name: 📺 巴哈姆特
     type: select
     proxies:
+      - ⚡ 🇨🇳 台湾 (Smart)
       - 🇨🇳 台湾
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
+
   - name: 📺 哔哩哔哩
     type: select
     proxies:
       - 🎯 全球直连
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
       - 🇨🇳 台湾
       - 🇭🇰 香港
+
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇭🇰 香港
       - 🇨🇳 台湾
       - 🇸🇬 新加坡
@@ -125,20 +181,32 @@ proxy-groups:
       - 🇰🇷 韩国
       - 🚀 手动切换
       - DIRECT
+
   - name: 🌏 国内媒体
     type: select
     proxies:
       - DIRECT
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
       - 🇭🇰 香港
       - 🇨🇳 台湾
       - 🇸🇬 新加坡
       - 🇯🇵 日本
       - 🚀 手动切换
+
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -146,11 +214,18 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇰🇷 韩国
       - 🚀 手动切换
+
   - name: Ⓜ️ 微软Bing
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -158,11 +233,18 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇰🇷 韩国
       - 🚀 手动切换
+
   - name: Ⓜ️ 微软云盘
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -170,11 +252,18 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇰🇷 韩国
       - 🚀 手动切换
+
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🚀 节点选择
       - DIRECT
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -182,11 +271,18 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇰🇷 韩国
       - 🚀 手动切换
+
   - name: 🍎 苹果服务
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -194,11 +290,18 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇰🇷 韩国
       - 🚀 手动切换
+
   - name: 🎮 游戏平台
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -206,11 +309,18 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇰🇷 韩国
       - 🚀 手动切换
+
   - name: 🎮 蔚蓝档案国际服
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -218,11 +328,18 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇰🇷 韩国
       - 🚀 手动切换
+
   - name: 🎮 炽焰天穹国际服
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇨🇳 台湾
@@ -230,17 +347,24 @@ proxy-groups:
       - 🇯🇵 日本
       - 🇰🇷 韩国
       - 🚀 手动切换
+
   - name: NoJa
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇺🇲 美国
       - 🇭🇰 香港
       - 🇨🇳 台湾
       - 🇸🇬 新加坡
       - 🇰🇷 韩国
       - 🚀 手动切换
+
   - name: 🎶 网易音乐
     type: select
     include-all: true
@@ -249,28 +373,38 @@ proxy-groups:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
+
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
+
   - name: 🛑 广告拦截
     type: select
     proxies:
       - REJECT
       - DIRECT
+
   - name: 🍃 应用净化
     type: select
     proxies:
       - REJECT
       - DIRECT
+
   - name: 🐟 漏网之鱼
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - DIRECT
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
       - 🇭🇰 香港
       - 🇨🇳 台湾
       - 🇸🇬 新加坡
@@ -278,34 +412,106 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇰🇷 韩国
       - 🚀 手动切换
+
+  # ==================== 基础选择组 ====================
   - name: 🇭🇰 香港
     include-all: true
     filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
     type: select
+
   - name: 🇯🇵 日本
     include-all: true
     filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
     type: select
+
   - name: 🇺🇲 美国
     include-all: true
     filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
     type: select
+
   - name: 🇨🇳 台湾
     include-all: true
     filter: (?i)台|新北|彰化|TW|Taiwan
     type: select
+
   - name: 🇸🇬 新加坡
     include-all: true
     filter: (?i)新加坡|坡|狮城|SG|Singapore
     type: select
+
   - name: 🇰🇷 韩国
     include-all: true
     filter: (?i)KR|Korea|KOR|首尔|韩|韓
     type: select
+
   - name: 🎥 奈飞
     include-all: true
     filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
     type: select
+
+  # ==================== 新增的 Smart 策略组 ====================
+  - name: ⚡ 🇭🇰 香港 (Smart)
+    type: smart
+    include-all: true
+    filter: (?i)港|HK|hk|Hong Kong|HongKong|hongkong
+    uselightgbm: true
+    collectdata: true
+    prefer-asn: true
+    sample-rate: 1
+
+  - name: ⚡ 🇯🇵 日本 (Smart)
+    type: smart
+    include-all: true
+    filter: (?i)日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan
+    uselightgbm: true
+    collectdata: true
+    prefer-asn: true
+    sample-rate: 1
+
+  - name: ⚡ 🇺🇲 美国 (Smart)
+    type: smart
+    include-all: true
+    filter: (?i)美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|United States
+    uselightgbm: true
+    collectdata: true
+    prefer-asn: true
+    sample-rate: 1
+
+  - name: ⚡ 🇨🇳 台湾 (Smart)
+    type: smart
+    include-all: true
+    filter: (?i)台|新北|彰化|TW|Taiwan
+    uselightgbm: true
+    collectdata: true
+    prefer-asn: true
+    sample-rate: 1
+
+  - name: ⚡ 🇸🇬 新加坡 (Smart)
+    type: smart
+    include-all: true
+    filter: (?i)新加坡|坡|狮城|SG|Singapore
+    uselightgbm: true
+    collectdata: true
+    prefer-asn: true
+    sample-rate: 1
+
+  - name: ⚡ 🇰🇷 韩国 (Smart)
+    type: smart
+    include-all: true
+    filter: (?i)KR|Korea|KOR|首尔|韩|韓
+    uselightgbm: true
+    collectdata: true
+    prefer-asn: true
+    sample-rate: 1
+
+  - name: ⚡ 🎥 奈飞 (Smart)
+    type: smart
+    include-all: true
+    filter: (?i)NF|奈飞|解锁|Netflix|NETFLIX|Media
+    uselightgbm: true
+    collectdata: true
+    prefer-asn: true
+    sample-rate: 1
 
 rule-providers:
   LocalAreaNetwork:
