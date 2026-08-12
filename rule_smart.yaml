@@ -15,6 +15,7 @@ dns:
   proxy-server-nameserver:
      - https://dns.cloudflare.com/dns-query
      - https://dns.google/dns-query
+     - https://doh.pub/dns-query
 
 proxy-groups:
   - name: 🚀 节点选择
