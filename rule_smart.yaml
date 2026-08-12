@@ -1,16 +1,20 @@
 dns:
   ipv6: true
+  default-nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
   nameserver-policy:
     "rule-set:OpenAi":
       - "https://dns.cloudflare.com/dns-query#disable-ipv6=true"
       - "https://dns.google/dns-query#disable-ipv6=true"
-      - "tls://1.1.1.1#disable-ipv6=true"
-      - "tls://8.8.4.4#disable-ipv6=true"
+
     "rule-set:Claude":
       - "https://dns.cloudflare.com/dns-query#disable-ipv6=true"
       - "https://dns.google/dns-query#disable-ipv6=true"
-      - "tls://1.1.1.1#disable-ipv6=true"
-      - "tls://8.8.4.4#disable-ipv6=true"
+
+  proxy-server-nameserver:
+     - https://dns.cloudflare.com/dns-query
+     - https://dns.google/dns-query
 
 proxy-groups:
   - name: 🚀 节点选择
@@ -83,6 +87,26 @@ proxy-groups:
       - DIRECT
 
   - name: 💬 Claude
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ⚡ 🇸🇬 新加坡 (Smart)
+      - ⚡ 🇭🇰 香港 (Smart)
+      - ⚡ 🇨🇳 台湾 (Smart)
+      - ⚡ 🇯🇵 日本 (Smart)
+      - ⚡ 🇺🇲 美国 (Smart)
+      - ⚡ 🇰🇷 韩国 (Smart)
+      - 🇸🇬 新加坡
+      - 🇭🇰 香港
+      - 🇨🇳 台湾
+      - 🇯🇵 日本
+      - 🇺🇲 美国
+      - 🇰🇷 韩国
+      - 🚀 手动切换
+      - DIRECT
+
+  - name: 💬 Grok
     type: select
     proxies:
       - 🚀 节点选择
@@ -759,6 +783,13 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  Grok:
+    url: https://raw.githubusercontent.com/chenmozhijin/Q2xhc2hSdWxl/refs/heads/main/Ruleset/Grok.list
+    path: ./ruleset/Grok.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
   OtherDirect:
     url: https://raw.githubusercontent.com/chenmozhijin/Q2xhc2hSdWxl/refs/heads/main/Ruleset/OtherDirect.list
     path: ./ruleset/OtherDirect.list
@@ -794,6 +825,7 @@ rules:
   - "RULE-SET,Telegram,📲 电报消息"
   - "RULE-SET,OpenAi,💬 OpenAi"
   - "RULE-SET,Claude,💬 Claude"
+  - "RULE-SET,Grok,💬 Grok"
   - "RULE-SET,NetEaseMusic,🎶 网易音乐"
   - "RULE-SET,Epic,🎮 游戏平台"
   - "RULE-SET,Origin,🎮 游戏平台"
