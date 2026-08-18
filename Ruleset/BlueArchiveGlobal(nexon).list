@@ -1,5 +1,9 @@
 DOMAIN-SUFFIX,nexon.com
+DOMAIN-SUFFIX,nexon.io
 DOMAIN-SUFFIX,bolo7yechd.execute-api.ap-northeast-1.amazonaws.com
 DOMAIN-SUFFIX,d2vaidpni345rp.cloudfront.net
+DOMAIN-SUFFIX,d1xcyqc5pfiggd.cloudfront.net
+DOMAIN-SUFFIX,d30y0swoxkbnsm.cloudfront.net
 DOMAIN,ocsp.digicert.com
+DOMAIN,app.adjust.com
 IP-CIDR,54.238.121.146/32,no-resolve
