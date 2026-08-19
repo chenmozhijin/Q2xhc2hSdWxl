@@ -13,8 +13,10 @@ dns:
       - "https://dns.google/dns-query#disable-ipv6=true"
 
   proxy-server-nameserver:
-     - https://dns.cloudflare.com/dns-query
-     - https://dns.google/dns-query
+     - tls://119.29.29.29
+     - tls://223.5.5.5
+     - https://dns.pub/dns-query
+     - https://dns.alidns.com/dns-query
 
 proxy-groups:
   - name: 🚀 节点选择
