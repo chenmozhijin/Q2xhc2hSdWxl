@@ -600,8 +600,16 @@ rule-providers:
     interval: 86400
     format: text
     type: http
+  CNDNS:
+    url: https://raw.githubusercontent.com/chenmozhijin/Q2xhc2hSdWxl/refs/heads/main/Ruleset/CNDNS.list
+    path: ./ruleset/CNDNS.list
+    behavior: classical
+    interval: 86400
+    format: text
+    type: http
 
 rules:
+  - "RULE-SET,CNDNS,🎯 全球直连"
   - "RULE-SET,LocalAreaNetwork,🎯 全球直连"
   - "RULE-SET,BanAD,🛑 广告拦截"
   - "RULE-SET,BanProgramAD,🍃 应用净化"
