@@ -622,7 +622,7 @@ rules:
   - "RULE-SET,BlueArchiveGlobal(nexon),🎮 蔚蓝档案国际服"
   - "RULE-SET,HeavenBurnsRed,🎮 炽焰天穹国际服"
   - "RULE-SET,NekoNyansoftPatches,🇺🇲 美国"
-  - "RULE-SET,NoJa,🎥 奈飞视频"
+  - "RULE-SET,NoJa,NoJa"
   - "RULE-SET,Grok,💬 Grok"
   - "RULE-SET,Steam,🎮 游戏平台"
   - "RULE-SET,Nintendo,🎮 游戏平台"
