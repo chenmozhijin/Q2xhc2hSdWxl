@@ -122,6 +122,7 @@ proxy-groups:
     type: select
     proxies:
       - 🇨🇳 台湾
+      - 🇭🇰 香港
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
