@@ -1,0 +1,73 @@
+name: Sync Tailscale DERP IPs
+
+# 从 https://login.tailscale.com/derpmap/default 拉取 DERP 中继服务器 IP，
+# 同步到 Ruleset/Tailscale.list（标记行以下由脚本生成，以上手工内容保留）。
+on:
+  schedule:
+    # 每天 03:17 UTC（北京时间 11:17）自动同步一次
+    - cron: "17 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-tailscale-derp
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v6
+
+      - name: 同步 DERP 中继 IP
+        run: python3 scripts/sync_tailscale_derp.py
+
+      - name: 校验规则文件
+        run: |
+          python3 - <<'PY'
+          import ipaddress
+          import sys
+          from pathlib import Path
+
+          path = Path("Ruleset/Tailscale.list")
+          allowed = ("DOMAIN,", "DOMAIN-SUFFIX,", "DOMAIN-KEYWORD,", "IP-CIDR,", "IP-CIDR6,", "#")
+          ip_lines = 0
+          for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+              if not line.strip():
+                  continue
+              if not line.startswith(allowed):
+                  sys.exit(f"第 {number} 行格式非法：{line}")
+              if not line.startswith(("IP-CIDR,", "IP-CIDR6,")):
+                  continue
+              if not line.endswith(",no-resolve"):
+                  sys.exit(f"第 {number} 行缺少 no-resolve：{line}")
+              try:
+                  network = ipaddress.ip_network(line.split(",")[1], strict=False)
+              except ValueError:
+                  sys.exit(f"第 {number} 行网段非法：{line}")
+              expected = "IP-CIDR," if network.version == 4 else "IP-CIDR6,"
+              if not line.startswith(expected):
+                  sys.exit(f"第 {number} 行协议前缀错误（IPv{network.version} 应为 {expected}）：{line}")
+              ip_lines += 1
+          if ip_lines == 0:
+              sys.exit("规则文件中没有任何 DERP 中继 IP")
+          print(f"校验通过：共 {ip_lines} 条中继 IP")
+          PY
+
+      - name: 提交变更
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- Ruleset/Tailscale.list; then
+            echo "Ruleset/Tailscale.list 无变化，跳过提交"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Ruleset/Tailscale.list
+          git commit -m "chore(ruleset): 同步 Tailscale DERP 中继 IP"
+          # 若期间有人推送过，先 rebase 再推送
+          git push || { git pull --rebase --autostash && git push; }
