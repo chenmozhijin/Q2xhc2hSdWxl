@@ -18,6 +18,12 @@ dns:
      - https://dns.pub/dns-query
      - https://dns.alidns.com/dns-query
 
+
+  fake-ip-filter:
+    - '+.tailscale.com'
+    - '+.tailscale.io'
+    - '+.ts.net'
+
 proxy-groups:
   - name: 🚀 节点选择
     type: select
