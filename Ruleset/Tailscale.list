@@ -46,12 +46,14 @@ IP-CIDR6,2a00:dd80:20::a25/128,no-resolve
 IP-CIDR6,2a00:dd80:20::bcf/128,no-resolve
 IP-CIDR6,2a00:dd80:20::e67/128,no-resolve
 # hel - Helsinki
+IP-CIDR,46.62.141.44/32,no-resolve
 IP-CIDR,65.109.143.62/32,no-resolve
 IP-CIDR,95.217.2.165/32,no-resolve
 IP-CIDR,157.180.28.32/32,no-resolve
 IP-CIDR6,2a01:4f9:c012:2e5b::1/128,no-resolve
 IP-CIDR6,2a01:4f9:c012:cd74::1/128,no-resolve
 IP-CIDR6,2a01:4f9:c012:d55c::1/128,no-resolve
+IP-CIDR6,2a01:4f9:c014:f18e::1/128,no-resolve
 # hkg - Hong Kong
 IP-CIDR,103.6.84.152/32,no-resolve
 IP-CIDR,205.147.105.30/32,no-resolve
